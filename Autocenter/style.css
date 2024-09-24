@@ -1,0 +1,707 @@
+body 
+{
+    font-family: Inter;
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+button 
+{
+    cursor: pointer;
+}
+
+.nav-icons img 
+{
+    cursor: pointer;
+    filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(6deg) brightness(75%) contrast(85%);
+}
+
+.nav-icons img:hover 
+{
+    filter: invert(63%) sepia(0%) saturate(0%) hue-rotate(152deg) brightness(85%) contrast(87%);
+}
+
+.container 
+{
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+.upper-header 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+ul 
+{
+    display: flex;
+    gap: 40px;
+}
+
+.header-nav 
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-contacts-number {
+    font-weight: 700;
+}
+
+li {
+    position: relative;
+    list-style: none;
+}
+
+.pop-arrow 
+{
+    transform: rotate(0deg); 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.pop-down 
+{
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.popup-list
+{
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 10px;
+    z-index: 1000;
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+.popup a 
+{
+    margin: 0;
+    color: black;
+}
+
+.popup a:hover 
+{
+    color: rgba(235, 28, 36, 1);
+}
+
+li:hover
+{
+cursor: pointer;
+color: rgba(235, 28, 36, 1);
+}
+
+/* главная часть header */
+
+.main-header 
+{
+    display: flex;
+    border-radius: 40px;
+    color: white;
+    background-color: rgba(25, 25, 25, 1);
+    padding: 100px;
+    position: relative;
+    
+}
+
+.main-header-title 
+{
+    font-size: 52px;
+    font-weight: 900;
+}
+
+.main-header-text 
+{
+    font-size: 24px;
+    opacity: 50%;
+}
+
+.main-header-content
+{
+    width: 40%;
+}
+
+.main-header-content > *
+{
+    margin-bottom: 50px;
+}
+
+.main-header-button
+{
+    border: none;
+    border-radius: 20px;
+    padding: 24px;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(235, 28, 36, 1);
+    
+}
+
+.main-header-pics 
+{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    position: relative;
+}
+
+.main-header-pics img {
+    position: absolute;
+}
+
+.main-header-pics img:nth-child(1) {
+    left: -110px;
+    z-index: 2;
+    
+}
+
+.main-header-pics img:nth-child(2) {
+  left: 210px;
+  z-index: 3;
+  
+}
+
+.main-header-pics img:nth-child(3) {
+    left: 450px;
+    z-index: 1;
+    filter: drop-shadow(5px 30px 20px #000000);
+}
+
+.main-header-pics img:nth-child(4) 
+{
+    left: 15px;
+    z-index: 0;
+}
+
+/* центральная часть страницы */
+
+.middle-desc 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle-desc button
+{
+    background:none;
+    border: none;
+}
+
+.button-sec
+{
+    display: flex;
+    align-items: center;
+}
+
+.car-cards 
+{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.car-card-pic 
+{
+    border-radius: 20px;
+}
+
+.middle-title 
+{
+font-weight: 900;
+font-size: 32px;
+}
+
+.car-card-desc
+{
+opacity: 50%;
+}
+
+.car-card-over
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.car-card-button 
+{
+background-color: rgba(48, 48, 48, 1);
+border: none;
+border-radius: 10px;
+padding: 10px 18px;
+color: white;   
+}
+
+.car-card-button:hover 
+{
+    background-color: rgba(235, 28, 36, 1);
+    cursor: pointer;
+}
+
+.price 
+{
+    font-weight: 700;
+}
+
+.middle-over-button
+{
+   text-align: center;
+   padding: 5px 18px;
+   
+}
+
+.middle-over-button button
+{
+    padding: 20px 82px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(235, 28, 36, 1);
+    margin-bottom: 125px;
+}
+
+.middle-china-korea 
+{
+    display: flex;
+    gap: 20px;
+    color: white;
+    
+    
+}
+
+.china, .korea 
+{
+    padding: 40px;
+    width: 50%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    margin-bottom: 125px;
+    
+    
+}
+
+.china 
+{
+    background-image: url('./pics/cars-cards/exeed2.jpg');
+    
+}
+
+.korea 
+{
+    background-image: url('./pics/cars-cards/solaris2.jpg');
+
+}
+
+.ck-title 
+{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.ck-button 
+{
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: gray;
+    color: white;   
+    
+}
+.ck-text 
+{
+    font-size: 16px;
+    margin-bottom: 85px;
+}
+
+.about-us 
+{
+    padding: 60px 120px 100px 120px;
+    color: white;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-image: url('./pics/bg.png')
+}
+
+.about-us-inside 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.about-us-text
+{
+    width: 50%;
+    margin: 0px;
+}
+
+.about-us-title
+{
+    margin: 0px;
+    font-weight: 900;
+}
+
+.info-cards 
+{
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.12);
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 30px 60px;
+    color: rgba(25, 25, 25, 1);
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-card 
+{
+    text-align: center;
+}
+
+/* отзывы */
+
+.reviews-top 
+{
+    position: relative;
+}
+
+.review-card
+{
+    display: flex;
+    align-items: flex-start;
+}
+
+span 
+{
+    font-weight: 400;
+    color: rgba(117, 117, 117, 1);
+    margin-left: 10px;
+}
+
+.review-inside > *
+{
+margin: 0px;
+margin-bottom: 10px;
+}
+
+.review-inside
+{
+    margin-left: 20px;
+}
+
+.review-date 
+{
+    font-size: 14px;
+}
+
+.reviews 
+{
+
+    overflow: hidden;
+}
+
+.review-carousel {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr)); 
+    grid-auto-flow: column; 
+    grid-template-rows: repeat(2, auto);
+    gap: 20px; 
+    transition: transform 0.5s ease-in-out;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; 
+    margin-bottom: 150px;
+    scroll-behavior: smooth;
+  }
+  
+  .arrow-left 
+  {
+    
+    box-shadow: 0 0 40px 0 rgba(0,0,0,.45);
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -220%;
+    z-index:  1000;
+    transform: rotate(90deg);
+    left: 0;
+  }
+
+ .hover
+  {
+    filter: invert(12%) sepia(91%) saturate(6986%) hue-rotate(354deg) brightness(108%) contrast(84%);
+  }
+
+  .hover
+  {
+    filter: invert(12%) sepia(91%) saturate(6986%) hue-rotate(354deg) brightness(108%) contrast(84%);
+  }
+
+  .arrow-right 
+  {
+    box-shadow: 0 0 40px 0 rgba(0,0,0,.45);
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -220%;
+    transform: rotate(-90deg);
+    right: 200px;
+    overflow: hidden ;
+    z-index:  1000;
+  }
+
+  .review-card {
+   
+    min-width: 700px; 
+    flex-shrink: 0;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start; 
+  }
+
+
+.review-carousel::-webkit-scrollbar {
+    display: none; 
+}
+
+/* форма и контакты */
+
+.contacts 
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 60px 0 60px;
+    color: white;
+    background-color: rgba(25, 25, 25, 1);
+    border-radius: 20px;
+    margin-bottom: 60px;
+}
+.contacts h2 
+{
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.contacts p 
+{
+    color: rgba(117, 117, 117, 1);
+}
+
+.contacts-left-bottom
+{
+    gap: 20px;
+    display: flex;
+  align-items: center;
+}
+
+.loc-single 
+{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputs 
+{
+    gap: 20px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contacts-right
+{
+    border-radius: 20px 20px 0 0 ;
+    color: black;
+    padding: 40px;
+    background-color: #fff;
+    height: 200%;
+}
+
+.input-label 
+{
+  
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    border: none;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+input[id="name"]
+{
+    background-color: rgba(235, 235, 235, 1);
+}
+
+textarea 
+{
+    width: 550px;
+    height: 100px;
+    border: none;
+    resize: none;
+}
+
+.form-radio
+{
+    width: 28px;
+    height: 28px;
+    border-radius: 30px;
+}
+
+.form-over {
+display: flex;
+align-items: center;
+}
+
+.form-over label 
+{
+    width: 50%;
+    
+    margin-left: 10px;
+}
+
+.form-over label span
+{
+margin-left: 0;
+color: rgba(22, 115, 254, 1);
+cursor: pointer;
+}
+.form-over button
+{
+    border: none;
+    padding: 20px;
+    color: rgba(117, 117, 117, 1);
+    background-color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* footer  */
+
+footer 
+{
+    background-color: rgba(25, 25, 25, 1);
+    color: white;
+}
+
+.footer-left
+{
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-link 
+{
+    margin-bottom: 20px;
+}
+
+.footer-link a:hover 
+{
+    cursor: pointer;
+    color: rgba(235, 28, 36, 1);
+}
+
+.footer-logo
+{
+    width: 110px;
+}
+
+.footer-content 
+{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-right 
+{
+    display: flex;
+    gap: 30px;
+}
+
+.car-list 
+{
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    width: 350px;
+    flex-wrap: wrap;
+}
+
+.footer-car 
+{
+    color: rgba(117, 117, 117, 1);
+}
+
+.footer-bot 
+{
+    border-top: 1px solid rgba(59, 59, 59, 1);
+    display: flex;
+   
+    justify-content: space-between;
+}
+
+.bot-left 
+{
+    margin: 50px 0px 50px 0px;
+}
+
+.footer-car:hover 
+{
+    cursor: pointer;
+    color: rgba(235, 28, 36, 1);
+}
+
+.footer-add 
+{
+    color: rgba(117, 117, 117, 1);
+    margin: 0;
+}
+
+
